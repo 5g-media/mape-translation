@@ -166,23 +166,6 @@ You are able to check the status of the plugins using your browser from the supe
 Type the URL: `http://{ipv4}:8888`
 
 
-## Generate documentation
-
-For the project documentation, the sphinx package is used.
-```bash
-$ cd /path-to-project/
-$ cd docs
-
-// Create documentation as HTML files
-$ sphinx-build -b html source build
-
-// Hint: only for windows
-$ make html
-```
-
-The source files are located in the `source/` folder while the documentation is located in the `build/` folder. 
-After the build process, the entrypoint of the HTML documentation will be the `docs/build/index.html` file.
-
 ## Authors
 - Athanasoulis Takis <pathanasoulis@ep.singularlogic.eu>
 
