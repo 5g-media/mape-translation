@@ -167,7 +167,7 @@ Type the URL: `http://{ipv4}:8888`
 
 
 ## Authors
-- Athanasoulis Takis <pathanasoulis@ep.singularlogic.eu>
+- <pathanasoulis@ep.singularlogic.eu>
 
 ## Contributors
  - Contact with Authors
