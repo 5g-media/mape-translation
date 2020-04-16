@@ -1,0 +1,139 @@
+{
+  "client_id": "07e2809aba244da3810d72d6670328d5",
+  "group_id": "Simulated group CERTH",
+  "timestamp": 1558355030.9729745,
+  "incoming_streams": [
+    {
+      "quality_id": 0,
+      "transcoder_id": "transcoder_2_8_4_vnfd.1",
+      "metrics": [
+        {
+          "name": " ",
+          "state": "on",
+          "value": 15.262451458259488,
+          "unit": "Mbps"
+        },
+        {
+          "name": "bitrate",
+          "state": "aggregated",
+          "value": 14.666444723787553,
+          "unit": "Mbps"
+        },
+        {
+          "name": "framerate",
+          "state": "on",
+          "value": 6.6535382233453415,
+          "unit": "fps"
+        },
+        {
+          "name": "framerate",
+          "state": "aggregated",
+          "value": 6.108582722009929,
+          "unit": "fps"
+        },
+        {
+          "name": "stall_events",
+          "state": "aggregated",
+          "value": 0,
+          "unit": "counts/minute"
+        },
+        {
+          "name": "stall_time",
+          "state": "aggregated",
+          "value": 0.0,
+          "unit": "%"
+        },
+        {
+          "name": "latency",
+          "state": "off",
+          "value": 0,
+          "unit": "ms"
+        },
+        {
+          "name": "latency",
+          "state": "off",
+          "value": 0.0,
+          "unit": "ms"
+        },
+        {
+          "name": "dec_time",
+          "state": "on",
+          "value": 0.014700000000000001,
+          "unit": "ms"
+        },
+        {
+          "name": "quality_shifts",
+          "state": "aggregated",
+          "value": 0,
+          "unit": "counts/minute"
+        }
+      ]
+    },
+    {
+      "quality_id": 0,
+      "transcoder_id": "transcoder_2_8_4_vnfd.2",
+      "metrics": [
+        {
+          "name": "bitrate",
+          "state": "on",
+          "value": 13.756769140975495,
+          "unit": "Mbps"
+        },
+        {
+          "name": "bitrate",
+          "state": "aggregated",
+          "value": 14.733803156471595,
+          "unit": "Mbps"
+        },
+        {
+          "name": "framerate",
+          "state": "on",
+          "value": 6.067551224705903,
+          "unit": "fps"
+        },
+        {
+          "name": "framerate",
+          "state": "aggregated",
+          "value": 6.291218892544851,
+          "unit": "fps"
+        },
+        {
+          "name": "stall_events",
+          "state": "aggregated",
+          "value": 0,
+          "unit": "counts/minute"
+        },
+        {
+          "name": "stall_time",
+          "state": "aggregated",
+          "value": 0.0,
+          "unit": "%"
+        },
+        {
+          "name": "latency",
+          "state": "off",
+          "value": 0,
+          "unit": "ms"
+        },
+        {
+          "name": "latency",
+          "state": "off",
+          "value": 0.0,
+          "unit": "ms"
+        },
+        {
+          "name": "dec_time",
+          "state": "on",
+          "value": 0.014700000000000001,
+          "unit": "ms"
+        },
+        {
+          "name": "quality_shifts",
+          "state": "aggregated",
+          "value": 0,
+          "unit": "counts/minute"
+        }
+      ]
+    }
+  ]
+}

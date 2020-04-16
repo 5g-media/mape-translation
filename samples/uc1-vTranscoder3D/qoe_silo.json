@@ -1,0 +1,12 @@
+{
+    "data": [
+        {
+            "name": "mean_opinion_score",
+            "timestamp": "2019-02-15T16:59:22.922000Z",
+            "type": "gauge",
+            "unit": "",
+            "value": 3.730421748645281
+        }
+    ],
+    "container_id": "a38753a23ef349878753a23ef319879d"
+}

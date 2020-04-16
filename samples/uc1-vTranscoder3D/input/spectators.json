@@ -1,0 +1,127 @@
+{
+  "client_id": "Client 0",
+  "group_id": "Simulated group CERTH",
+  "timestamp": 1555929412.6186516,
+  "incoming_streams": [
+    {
+      "transcoder_vnf_id": "transcoder 1",
+      "quality_id": "quality_for_player_1",
+      "metrics": [
+        {
+          "name": "bitrate",
+          "state": "on",
+          "value": 459.78818380743985,
+          "unit": "Mbps"
+        },
+        {
+          "name": "bitrate",
+          "state": "aggregated",
+          "value": 3.486628235440578,
+          "unit": "Mbps"
+        },
+        {
+          "name": "framerate",
+          "state": "on",
+          "value": 0.41319837680172566,
+          "unit": "fps"
+        },
+        {
+          "name": "framerate",
+          "state": "aggregated",
+          "value": 2.57081071132224E-9,
+          "unit": "fps"
+        },
+        {
+          "name": "stall_events",
+          "state": "aggregated",
+          "value": 0,
+          "unit": "counts/minute"
+        },
+        {
+          "name": "stall_time",
+          "state": "aggregated",
+          "value": 0.0,
+          "unit": "%"
+        },
+        {
+          "name": "latency",
+          "state": "aggregated",
+          "value": 5374.323113594504,
+          "unit": "ms"
+        },
+        {
+          "name": "mesh_dec_time",
+          "state": "on",
+          "value": 0.7000000000000001,
+          "unit": "ms"
+        },
+        {
+          "name": "tex_dec_time",
+          "state": "on",
+          "value": 0.5,
+          "unit": "ms"
+        }
+      ]
+    },
+    {
+      "transcoder_vnf_id": "transcoder_2",
+      "quality_id": "quality_for_player_2",
+      "metrics": [
+        {
+          "name": "bitrate",
+          "state": "on",
+          "value": 543.4103575353979,
+          "unit": "Mbps"
+        },
+        {
+          "name": "bitrate",
+          "state": "aggregated",
+          "value": 3.6373988688072054,
+          "unit": "Mbps"
+        },
+        {
+          "name": "framerate",
+          "state": "on",
+          "value": 0.4130353326411833,
+          "unit": "fps"
+        },
+        {
+          "name": "framerate",
+          "state": "aggregated",
+          "value": 2.5708107093229665E-9,
+          "unit": "fps"
+        },
+        {
+          "name": "stall_events",
+          "state": "aggregated",
+          "value": 0,
+          "unit": "counts/minute"
+        },
+        {
+          "name": "stall_time",
+          "state": "aggregated",
+          "value": 0.0,
+          "unit": "%"
+        },
+        {
+          "name": "latency",
+          "state": "aggregated",
+          "value": 6168.923885634933,
+          "unit": "ms"
+        },
+        {
+          "name": "mesh_dec_time",
+          "state": "on",
+          "value": 0.7000000000000001,
+          "unit": "ms"
+        },
+        {
+          "name": "tex_dec_time",
+          "state": "on",
+          "value": 0.5,
+          "unit": "ms"
+        }
+      ]
+    }
+  ]
+}

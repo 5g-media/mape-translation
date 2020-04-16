@@ -1,0 +1,57 @@
+{
+    "_VIM_VM_ID": "06d588a9972d4e279588a9972d3e274a|string",
+    "timestamp": "<a_timestamp>09467748045848|number",
+    "produced_qualitites": [
+        {
+            "quality_id": "<id_of_quality_1>10|string",
+            "metrics": [
+                {
+                    "name": "<metric_type>Latency|string",
+                    "state": "<on-off-aggregated>On|string",
+                    "value": "<measurement>10.1567|number",
+                    "unit": "<unit_of_measurement>ms|string"
+                },
+                {
+                    "name": "<metric_type>Output rate|string",
+                    "state": "<on-off-aggregated>On|string",
+                    "value": "<measurement>118198|number",
+                    "unit": "<unit_of_measurement>Mbps|string"
+                }
+            ]
+        },
+        {
+            "quality_id": "<id_of_quality_2>8|string",
+            "metrics": [
+                {
+                    "name": "<metric_type>Latency|string",
+                    "state": "<on-off-aggregated>On|string",
+                    "value": "<measurement>10.1567|number",
+                    "unit": "<unit_of_measurement>ms|string"
+                },
+                {
+                    "name": "<metric_type>Output rate|string",
+                    "state": "<on-off-aggregated>On|string",
+                    "value": "<measurement>118198|number",
+                    "unit": "<unit_of_measurement>Mbps|string"
+                }
+            ]
+        },
+        {
+            "quality_id": "<id_of_quality_3>1|string",
+            "metrics": [
+                {
+                    "name": "<metric_type>Latency|string",
+                    "state": "<on-off-aggregated>On|string",
+                    "value": "<measurement>0.9710|number",
+                    "unit": "<unit_of_measurement>ms|string"
+                },
+                {
+                    "name": "<metric_type>Output rate|string",
+                    "state": "<on-off-aggregated>On|string",
+                    "value": "<measurement>162795|number",
+                    "unit": "<unit_of_measurement>Mbps|string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "06:00:cc:74:72:95",
+  "utc_time": 1581007952128,
+  "pid": 647,
+  "pid_cpu": 73.1,
+  "pid_ram": 97517568,
+  "gop_size": 25,
+  "num_fps": 25,
+  "num_frame": 2260028,
+  "enc_quality": 40,
+  "enc_dbl_time": 90401.12,
+  "enc_str_time": "1",
+  "max_bitrate": 3000,
+  "avg_bitrate": 2860.2,
+  "act_bitrate": 3025.2,
+  "enc_speed": 1
+}

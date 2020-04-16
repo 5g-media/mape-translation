@@ -1,0 +1,501 @@
+{
+    "hostname": "host-192-168-111-34",
+    "metrics": [
+        {
+            "value": {
+                "Name": "Copy",
+                "ObjectName": {
+                    "objectName": "java.lang:name=Copy,type=GarbageCollector"
+                },
+                "CollectionTime": 214,
+                "Valid": "true",
+                "MemoryPoolNames": [
+                    "Eden Space",
+                    "Survivor Space"
+                ],
+                "LastGcInfo": {
+                    "startTime": 2043600030,
+                    "memoryUsageBeforeGc": {
+                        "Survivor Space": {
+                            "used": 2087224,
+                            "max": 17891328,
+                            "init": 17891328,
+                            "committed": 17891328
+                        },
+                        "Eden Space": {
+                            "used": 143130624,
+                            "max": 143130624,
+                            "init": 143130624,
+                            "committed": 143130624
+                        },
+                        "Code Cache": {
+                            "used": 22348096,
+                            "max": 251658240,
+                            "init": 2555904,
+                            "committed": 22675456
+                        },
+                        "Tenured Gen": {
+                            "used": 24633192,
+                            "max": 357957632,
+                            "init": 357957632,
+                            "committed": 357957632
+                        },
+                        "Metaspace": {
+                            "used": 40770648,
+                            "max": -1,
+                            "init": 0,
+                            "committed": 41680896
+                        },
+                        "Compressed Class Space": {
+                            "used": 4687704,
+                            "max": 1073741824,
+                            "init": 0,
+                            "committed": 4980736
+                        }
+                    },
+                    "id": 9,
+                    "GcThreadCount": 1,
+                    "memoryUsageAfterGc": {
+                        "Survivor Space": {
+                            "used": 2281224,
+                            "max": 17891328,
+                            "init": 17891328,
+                            "committed": 17891328
+                        },
+                        "Eden Space": {
+                            "used": 0,
+                            "max": 143130624,
+                            "init": 143130624,
+                            "committed": 143130624
+                        },
+                        "Code Cache": {
+                            "used": 22348096,
+                            "max": 251658240,
+                            "init": 2555904,
+                            "committed": 22675456
+                        },
+                        "Tenured Gen": {
+                            "used": 24633192,
+                            "max": 357957632,
+                            "init": 357957632,
+                            "committed": 357957632
+                        },
+                        "Metaspace": {
+                            "used": 40770648,
+                            "max": -1,
+                            "init": 0,
+                            "committed": 41680896
+                        },
+                        "Compressed Class Space": {
+                            "used": 4687704,
+                            "max": 1073741824,
+                            "init": 0,
+                            "committed": 4980736
+                        }
+                    },
+                    "endTime": 2043600055,
+                    "duration": 25
+                },
+                "CollectionCount": 9
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:name=Copy,type=GarbageCollector",
+                "type": "read"
+            },
+            "status": 200
+        },
+        {
+            "value": {
+                "VmVersion": "25.152-b16",
+                "SpecVersion": "1.8",
+                "ObjectName": {
+                    "objectName": "java.lang:type=Runtime"
+                },
+                "StartTime": 1531086820462,
+                "InputArguments": [
+                    "-Djava.system.class.loader=io.osv.isolated.IsolatingOsvSystemClassLoader",
+                    "-Djava.util.logging.manager=io.osv.jul.IsolatingLogManager",
+                    "-Dosv.version=v0.24-472-gf240a59",
+                    "-Xms512m",
+                    "-Xmx512m"
+                ],
+                "Uptime": 2047275157,
+                "SpecName": "Java Virtual Machine Specification",
+                "BootClassPath": "/usr/lib/jvm/java/jre/lib/resources.jar:/usr/lib/jvm/java/jre/lib/rt.jar:/usr/lib/jvm/java/jre/lib/sunrsasign.jar:/usr/lib/jvm/java/jre/lib/jsse.jar:/usr/lib/jvm/java/jre/lib/jce.jar:/usr/lib/jvm/java/jre/lib/charsets.jar:/usr/lib/jvm/java/jre/lib/jfr.jar:/usr/lib/jvm/java/jre/classes",
+                "SystemProperties": {
+                    "PID": "0",
+                    "java.vm.name": "OpenJDK 64-Bit Server VM",
+                    "sun.os.patch.level": "unknown",
+                    "java.ext.dirs": "/usr/lib/jvm/java/jre/lib/ext:/usr/java/packages/lib/ext",
+                    "sun.management.compiler": "HotSpot 64-Bit Tiered Compilers",
+                    "java.awt.graphicsenv": "sun.awt.X11GraphicsEnvironment",
+                    "user.dir": "/",
+                    "sun.jnu.encoding": "UTF-8",
+                    "java.endorsed.dirs": "/usr/lib/jvm/java/jre/lib/endorsed",
+                    "java.awt.headless": "true",
+                    "java.runtime.name": "OpenJDK Runtime Environment",
+                    "java.util.logging.manager": "io.osv.jul.IsolatingLogManager",
+                    "java.specification.version": "1.8",
+                    "catalina.base": "/tmp/tomcat.1503979465888444470.8080",
+                    "osv.version": "v0.24-472-gf240a59",
+                    "line.separator": "\n",
+                    "java.home": "/usr/lib/jvm/java/jre",
+                    "java.library.path": "/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib",
+                    "java.version": "1.8.0_152",
+                    "java.system.class.loader": "io.osv.isolated.IsolatingOsvSystemClassLoader",
+                    "java.io.tmpdir": "/tmp",
+                    "org.jboss.logging.provider": "slf4j",
+                    "java.vm.version": "25.152-b16",
+                    "java.class.path": "/:/5G-monitor-0.0.1-SNAPSHOT.jar",
+                    "file.encoding.pkg": "sun.io",
+                    "sun.boot.library.path": "/usr/lib/jvm/java/jre/lib/amd64",
+                    "os.arch": "amd64",
+                    "java.vm.specification.name": "Java Virtual Machine Specification",
+                    "java.runtime.version": "1.8.0_152-b16",
+                    "sun.cpu.isalist": "",
+                    "java.vm.vendor": "Azul Systems, Inc.",
+                    "file.separator": "/",
+                    "catalina.home": "/tmp/tomcat.1503979465888444470.8080",
+                    "sun.cpu.endian": "little",
+                    "user.home": "/",
+                    "java.specification.vendor": "Oracle Corporation",
+                    "java.class.version": "52.0",
+                    "catalina.useNaming": "false",
+                    "java.vendor.url.bug": "http://www.azulsystems.com/support/",
+                    "sun.arch.data.model": "64",
+                    "java.vendor.url": "http://www.azulsystems.com/",
+                    "sun.io.unicode.encoding": "UnicodeLittle",
+                    "spring.beaninfo.ignore": "true",
+                    "sun.boot.class.path": "/usr/lib/jvm/java/jre/lib/resources.jar:/usr/lib/jvm/java/jre/lib/rt.jar:/usr/lib/jvm/java/jre/lib/sunrsasign.jar:/usr/lib/jvm/java/jre/lib/jsse.jar:/usr/lib/jvm/java/jre/lib/jce.jar:/usr/lib/jvm/java/jre/lib/charsets.jar:/usr/lib/jvm/java/jre/lib/jfr.jar:/usr/lib/jvm/java/jre/classes",
+                    "os.version": "3.7.0",
+                    "java.specification.name": "Java Platform API Specification",
+                    "java.vendor": "Azul Systems, Inc.",
+                    "awt.toolkit": "sun.awt.X11.XToolkit",
+                    "java.awt.printerjob": "sun.print.PSPrinterJob",
+                    "java.protocol.handler.pkgs": "org.springframework.boot.loader",
+                    "user.language": "en",
+                    "java.vm.info": "mixed mode",
+                    "user.name": "osv",
+                    "file.encoding": "UTF-8",
+                    "java.vm.specification.vendor": "Oracle Corporation",
+                    "java.vm.specification.version": "1.8",
+                    "path.separator": ":",
+                    "user.timezone": "GMT",
+                    "os.name": "Linux"
+                },
+                "VmName": "OpenJDK 64-Bit Server VM",
+                "VmVendor": "Azul Systems, Inc.",
+                "SpecVendor": "Oracle Corporation",
+                "BootClassPathSupported": "true",
+                "ClassPath": "/:/5G-monitor-0.0.1-SNAPSHOT.jar",
+                "Name": "0@localhost",
+                "ManagementSpecVersion": "1.2",
+                "LibraryPath": "/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:type=Runtime",
+                "type": "read"
+            },
+            "status": 200
+        },
+        {
+            "value": {
+                "AllThreadIds": [
+                    34,
+                    32,
+                    31,
+                    30,
+                    29,
+                    28,
+                    27,
+                    26,
+                    25,
+                    24,
+                    23,
+                    22,
+                    21,
+                    20,
+                    19,
+                    18,
+                    17,
+                    4,
+                    3,
+                    2
+                ],
+                "SynchronizerUsageSupported": "true",
+                "ObjectName": {
+                    "objectName": "java.lang:type=Threading"
+                },
+                "ThreadAllocatedMemoryEnabled": "true",
+                "ThreadContentionMonitoringSupported": "true",
+                "TotalStartedThreadCount": 26,
+                "CurrentThreadCpuTimeSupported": "true",
+                "DaemonThreadCount": 18,
+                "CurrentThreadUserTime": -1,
+                "CurrentThreadCpuTime": 1275740762,
+                "ThreadCpuTimeSupported": "true",
+                "ThreadAllocatedMemorySupported": "true",
+                "ThreadCount": 20,
+                "ThreadCpuTimeEnabled": "true",
+                "PeakThreadCount": 23,
+                "ThreadContentionMonitoringEnabled": "false",
+                "ObjectMonitorUsageSupported": "true"
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:type=Threading",
+                "type": "read"
+            },
+            "status": 200
+        },
+        {
+            "value": {
+                "Name": "MarkSweepCompact",
+                "ObjectName": {
+                    "objectName": "java.lang:name=MarkSweepCompact,type=GarbageCollector"
+                },
+                "CollectionTime": 145,
+                "Valid": "true",
+                "MemoryPoolNames": [
+                    "Eden Space",
+                    "Survivor Space",
+                    "Tenured Gen"
+                ],
+                "LastGcInfo": {
+                    "startTime": 41012,
+                    "memoryUsageBeforeGc": {
+                        "Survivor Space": {
+                            "used": 10807632,
+                            "max": 17891328,
+                            "init": 17891328,
+                            "committed": 17891328
+                        },
+                        "Eden Space": {
+                            "used": 89271424,
+                            "max": 143130624,
+                            "init": 143130624,
+                            "committed": 143130624
+                        },
+                        "Code Cache": {
+                            "used": 12032384,
+                            "max": 251658240,
+                            "init": 2555904,
+                            "committed": 12124160
+                        },
+                        "Tenured Gen": {
+                            "used": 18075968,
+                            "max": 357957632,
+                            "init": 357957632,
+                            "committed": 357957632
+                        },
+                        "Metaspace": {
+                            "used": 35595608,
+                            "max": -1,
+                            "init": 0,
+                            "committed": 36265984
+                        },
+                        "Compressed Class Space": {
+                            "used": 4301872,
+                            "max": 1073741824,
+                            "init": 0,
+                            "committed": 4456448
+                        }
+                    },
+                    "id": 2,
+                    "GcThreadCount": 1,
+                    "memoryUsageAfterGc": {
+                        "Survivor Space": {
+                            "used": 0,
+                            "max": 17891328,
+                            "init": 17891328,
+                            "committed": 17891328
+                        },
+                        "Eden Space": {
+                            "used": 0,
+                            "max": 143130624,
+                            "init": 143130624,
+                            "committed": 143130624
+                        },
+                        "Code Cache": {
+                            "used": 12032384,
+                            "max": 251658240,
+                            "init": 2555904,
+                            "committed": 12124160
+                        },
+                        "Tenured Gen": {
+                            "used": 24633192,
+                            "max": 357957632,
+                            "init": 357957632,
+                            "committed": 357957632
+                        },
+                        "Metaspace": {
+                            "used": 35595608,
+                            "max": -1,
+                            "init": 0,
+                            "committed": 36265984
+                        },
+                        "Compressed Class Space": {
+                            "used": 4301872,
+                            "max": 1073741824,
+                            "init": 0,
+                            "committed": 4456448
+                        }
+                    },
+                    "endTime": 41100,
+                    "duration": 88
+                },
+                "CollectionCount": 2
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:name=MarkSweepCompact,type=GarbageCollector",
+                "type": "read"
+            },
+            "status": 200
+        },
+        {
+            "value": {
+                "Name": "HotSpot 64-Bit Tiered Compilers",
+                "TotalCompilationTime": 31665,
+                "ObjectName": {
+                    "objectName": "java.lang:type=Compilation"
+                },
+                "CompilationTimeMonitoringSupported": "true"
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:type=Compilation",
+                "type": "read"
+            },
+            "status": 200
+        },
+        {
+            "value": {
+                "CollectionUsageThresholdExceeded": "false",
+                "MemoryManagerNames": [
+                    "MarkSweepCompact"
+                ],
+                "UsageThresholdExceeded": "false",
+                "Usage": {
+                    "used": 24633192,
+                    "max": 357957632,
+                    "init": 357957632,
+                    "committed": 357957632
+                },
+                "Type": "HEAP",
+                "CollectionUsageThresholdCount": 0,
+                "PeakUsage": {
+                    "used": 24633192,
+                    "max": 357957632,
+                    "init": 357957632,
+                    "committed": 357957632
+                },
+                "CollectionUsage": {
+                    "used": 24633192,
+                    "max": 357957632,
+                    "init": 357957632,
+                    "committed": 357957632
+                },
+                "Valid": "true",
+                "Name": "Tenured Gen",
+                "ObjectName": {
+                    "objectName": "java.lang:name=Tenured Gen,type=MemoryPool"
+                },
+                "UsageThreshold": 0,
+                "CollectionUsageThreshold": 0,
+                "UsageThresholdCount": 0,
+                "UsageThresholdSupported": "true",
+                "CollectionUsageThresholdSupported": "true"
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:name=Tenured Gen,type=MemoryPool",
+                "type": "read"
+            },
+            "status": 200
+        },
+        {
+            "value": {
+                "Name": "CodeCacheManager",
+                "ObjectName": {
+                    "objectName": "java.lang:name=CodeCacheManager,type=MemoryManager"
+                },
+                "Valid": "true",
+                "MemoryPoolNames": [
+                    "Code Cache"
+                ]
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:name=CodeCacheManager,type=MemoryManager",
+                "type": "read"
+            },
+            "status": 200
+        },
+        {
+            "value": {
+                "NonHeapMemoryUsage": {
+                    "used": 67885664,
+                    "max": -1,
+                    "init": 2555904,
+                    "committed": 69337088
+                },
+                "ObjectPendingFinalizationCount": 0,
+                "ObjectName": {
+                    "objectName": "java.lang:type=Memory"
+                },
+                "HeapMemoryUsage": {
+                    "used": 59420928,
+                    "max": 518979584,
+                    "init": 536870912,
+                    "committed": 518979584
+                },
+                "Verbose": "false"
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:type=Memory",
+                "type": "read"
+            },
+            "status": 200
+        },
+        {
+            "value": {
+                "TotalLoadedClassCount": 7173,
+                "ObjectName": {
+                    "objectName": "java.lang:type=ClassLoading"
+                },
+                "UnloadedClassCount": 0,
+                "LoadedClassCount": 7173,
+                "Verbose": "false"
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:type=ClassLoading",
+                "type": "read"
+            },
+            "status": 200
+        },
+        {
+            "value": {
+                "Name": "Metaspace Manager",
+                "ObjectName": {
+                    "objectName": "java.lang:name=Metaspace Manager,type=MemoryManager"
+                },
+                "Valid": "true",
+                "MemoryPoolNames": [
+                    "Metaspace",
+                    "Compressed Class Space"
+                ]
+            },
+            "timestamp": 1533134095,
+            "request": {
+                "mbean": "java.lang:name=Metaspace Manager,type=MemoryManager",
+                "type": "read"
+            },
+            "status": 200
+        }
+    ]
+}

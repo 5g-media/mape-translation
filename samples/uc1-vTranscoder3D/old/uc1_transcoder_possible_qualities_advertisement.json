@@ -1,0 +1,104 @@
+{
+    "vnf_id": "<id_of_the_vnf>x45645ers",
+    "posible_qualities": [
+        {
+            "quality_name": "<name_of_quality_1>Passthrough",
+            "quality_id": "<id_of_quality_1>1",
+            "nominal_specs": [
+                "<scale_distortion>0",
+                "<scale_rate>10",
+                "<scale_processing_latency>0",
+                "<scale_cpu_cost>0",
+                "<scale_gpu_cost>0"
+            ],
+            "q3d": {
+                "mesh_codec_name": "<name_of_mesh_codec>Passthrough",
+                "mesh_codec_id": "<id_of_mesh_codec>0",
+                "nominal_specs": [
+                    "<scale_distortion>0",
+                    "<scale_rate>5",
+                    "<scale_processing_latency>0",
+                    "<scale_cpu_cost>0",
+                    "<scale_gpu_cost>0"
+                ]
+            },
+            "q2d": {
+                "texture_codec_name": "<name_of_texture_codec>Passthrough",
+                "texture_codec_id": "<id_of_texture_codec>0",
+                "nominal_specs": [
+                    "<scale_distortion>0",
+                    "<scale_rate>5",
+                    "<scale_processing_latency>0",
+                    "<scale_cpu_cost>0",
+                    "<scale_gpu_cost>0"
+                ]
+            }
+        },
+        {
+            "quality_name": "<name_of_quality_2>MidCG",
+            "quality_id": "<id_of_quality_2>8",
+            "nominal_specs": [
+                "<scale_distortion>5",
+                "<scale_rate>5",
+                "<scale_processing_latency>5",
+                "<scale_cpu_cost>3",
+                "<scale_gpu_cost>5"
+            ],
+            "q3d": {
+                "mesh_codec_name": "<name_of_mesh_codec>DracoHC",
+                "mesh_codec_id": "<id_of_mesh_codec>3",
+                "nominal_specs": [
+                    "<scale_distortion>2",
+                    "<scale_rate>2",
+                    "<scale_processing_latency>3",
+                    "<scale_cpu_cost>3",
+                    "<scale_gpu_cost>0"
+                ]
+            },
+            "q2d": {
+                "texture_codec_name": "<name_of_texture_codec>CudaM",
+                "texture_codec_id": "<id_of_texture_codec>4",
+                "nominal_specs": [
+                    "<scale_distortion>3",
+                    "<scale_rate>3",
+                    "<scale_processing_latency>2",
+                    "<scale_cpu_cost>0",
+                    "<scale_gpu_cost>5"
+                ]
+            }
+        },
+        {
+            "quality_name": "<name_of_quality_3>LowCC",
+            "quality_id": "<id_of_quality_3>10",
+            "nominal_specs": [
+                "<scale_distortion>10",
+                "<scale_rate>2",
+                "<scale_processing_latency>10",
+                "<scale_cpu_cost>10",
+                "<scale_gpu_cost>0"
+            ],
+            "q3d": {
+                "mesh_codec_name": "<name_of_mesh_codec>DracoLC",
+                "mesh_codec_id": "<id_of_mesh_codec>5",
+                "nominal_specs": [
+                    "<scale_distortion>5",
+                    "<scale_rate>1",
+                    "<scale_processing_latency>5",
+                    "<scale_cpu_cost>5",
+                    "<scale_gpu_cost>0"
+                ]
+            },
+            "q2d": {
+                "texture_codec_name": "<name_of_texture_codec>TurboL",
+                "texture_codec_id": "<id_of_texture_codec>5",
+                "nominal_specs": [
+                    "<scale_distortion>5",
+                    "<scale_rate>1",
+                    "<scale_processing_latency>5",
+                    "<scale_cpu_cost>5",
+                    "<scale_gpu_cost>0"
+                ]
+            }
+        }
+    ]
+}

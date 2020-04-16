@@ -1,0 +1,10 @@
+{
+  "fields": {
+    "hostdb.cache.total_hits": 0
+  },
+  "name": "trafficserver_stats",
+  "tags": {
+    "host": "F9B05EE3-9E1D-4EA1-91B7-B4DC8149A08C"
+  },
+  "timestamp": 1553874520
+}

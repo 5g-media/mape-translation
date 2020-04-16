@@ -1,0 +1,79 @@
+import json
+import logging
+from kafka import KafkaConsumer
+from settings import KAFKA_SERVER, KAFKA_CLIENT_ID, KAFKA_API_VERSION, KAFKA_MONITORING_TOPICS, \
+    LOGGING, KAFKA_GROUP_ID, KAFKA_TRANSLATION_TOPIC
+from translator.utils import consume_metric, yield_memory_metrics_from_flavor_openstack, \
+    yield_vpcu_metric_from_flavor_openstack
+from translator.exceptions import VduNotFound, OsmInfoNotFound
+from translator import openstack
+from aiokafka import AIOKafkaProducer
+import asyncio
+
+logging.config.dictConfig(LOGGING)
+logger = logging.getLogger("translator")
+
+
+def main():
+    nfvi_or_app = "openstack"
+    # See more: https://kafka-python.readthedocs.io/en/master/apidoc/KafkaConsumer.html
+    consumer = KafkaConsumer(bootstrap_servers=KAFKA_SERVER, client_id=KAFKA_CLIENT_ID, enable_auto_commit=True,
+                             value_deserializer=lambda v: json.loads(v.decode('utf-8', 'ignore')),
+                             api_version=KAFKA_API_VERSION, group_id=KAFKA_GROUP_ID[nfvi_or_app])
+    consumer.subscribe(pattern=KAFKA_MONITORING_TOPICS[nfvi_or_app])
+
+    for msg in consumer:
+        try:
+            metric = msg.value
+            # if not isinstance(metric, dict):
+            #     continue
+            # Skip not useful metrics
+            source_type = metric.get("source").lower()
+            metric_type = metric.get("counter_name", None)
+            if not consume_metric(source_type, metric_type):
+                continue
+            metric_str = json.dumps(metric)
+            loop = asyncio.get_event_loop()
+
+            async def push_metrics(metric_str):
+                """Push metric(s) in the topic of Kafka"""
+                metric = json.loads(metric_str)
+                # Find the VDU uuid
+                vdu_uuid = metric.get("resource_metadata", {}).get('instance_id', None)
+                if vdu_uuid is None:
+                    return
+                # Get cluster layout and initial topic/partition leadership information
+                producer = AIOKafkaProducer(loop=loop, bootstrap_servers=KAFKA_SERVER)
+                await producer.start()
+                await asyncio.sleep(0.2)
+                try:
+                    # Generate a standard structure for each metric
+                    os_translator = openstack.Metric(raw_metric=metric)
+                    metric_translation = os_translator.get_translation(vdu_uuid)
+                    metric_translation_str = json.dumps(metric_translation)
+                    await producer.send_and_wait(KAFKA_TRANSLATION_TOPIC, str.encode(metric_translation_str))
+                    if metric_type == "memory.usage":
+                        metrics = yield_memory_metrics_from_flavor_openstack(metric_translation)
+                        for item in metrics:
+                            item_str = json.dumps(item)
+                            await producer.send_and_wait(KAFKA_TRANSLATION_TOPIC, str.encode(item_str))
+                    elif metric_type == "cpu":
+                        vcpu_metric = yield_vpcu_metric_from_flavor_openstack(metric_translation)
+                        vcpu_metric_str = json.dumps(vcpu_metric)
+                        await producer.send_and_wait(KAFKA_TRANSLATION_TOPIC, str.encode(vcpu_metric_str))
+                finally:
+                    # Wait for all pending messages to be delivered or expire.
+                    await producer.stop()
+
+            loop.run_until_complete(push_metrics(metric_str))
+
+        except (VduNotFound, OsmInfoNotFound) as exc:
+            logger.warning(exc)
+        except asyncio.CancelledError:
+            logger.error('AsyncIO timeout')
+        except Exception as ex:
+            logger.exception(ex)
+
+
+if __name__ == '__main__':
+    main()

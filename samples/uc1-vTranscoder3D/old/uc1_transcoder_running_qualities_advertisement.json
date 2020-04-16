@@ -1,0 +1,7 @@
+{
+    "vnf_id": "<id_of_the_vnf>x45645ers",
+    "running_qualities_prioritised": [
+        "<id_of_priority_1_quality>1",
+        "<id_of_priority_2_quality>10"
+    ]
+}

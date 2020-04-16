@@ -1,0 +1,44 @@
+{
+  "mano": {
+    "vdu": {
+      "ip_address": "0.0.0.0",
+      "name": "ns_takis2-2-faas_pong_vnfd-1",
+      "mgmt-interface": null,
+      "image_id": null,
+      "status": "ACTIVE",
+      "flavor": {
+        "disk": null,
+        "ram": null,
+        "vcpus": null
+      },
+      "id": "23d3bf86cdac437893bf86cdacc3789b"
+    },
+    "ns": {
+      "name": "ns_takis2",
+      "nsd_name": "faas_pingpong_nsd",
+      "nsd_id": null,
+      "id": "fdc4f873-c897-4ae9-a2ec-4238302a7657"
+    },
+    "vim": {
+      "type": "faas",
+      "uuid": "15df8195-c975-4fce-b8f5-ecd63d34ecc4",
+      "name": "FaaS_VIM",
+      "url": "https://10.30.2.60:443",
+      "tag": "kubernetes"
+    },
+    "vnf": {
+      "name": null,
+      "vnfd_name": "faas_pong_vnfd",
+      "vnfd_id": "1225e0a5-7f36-47cb-8681-0058d2fa8f69",
+      "short_name": null,
+      "id": "aff8c16b-17dd-48e6-9ccd-c319ca43785a"
+    }
+  },
+  "metric": {
+    "timestamp": "2019-02-13T15:45:54.553000Z",
+    "type": "counter",
+    "name": "container_network_transmit_packets_dropped_total",
+    "value": "0",
+    "unit": ""
+  }
+}

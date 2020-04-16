@@ -1,0 +1,29 @@
+// "container_id" => vim-id in OSM
+
+{
+    "container_id": "959a1de912ce454a9a1de912ce654ae9",
+    "metric_type": "container_cpu_system_seconds_total",
+    "data": [
+        {
+            "type": "counter",
+            "name": "container_cpu_system_seconds_total",
+            "timestamp": "2019-02-13T10:14:32.897000Z",
+            "unit": "seconds",
+            "value": "0.21000000000000016"
+        },
+        {
+            "type": "counter",
+            "name": "container_cpu_system_seconds_total",
+            "timestamp": "2019-02-13T10:15:02.897000Z",
+            "unit": "seconds",
+            "value": "0.21000000000000016"
+        },
+        {
+            "type": "counter",
+            "name": "container_cpu_system_seconds_total",
+            "timestamp": "2019-02-13T10:15:32.897000Z",
+            "unit": "seconds",
+            "value": "0.21000000000000016"
+        }
+    ]
+}

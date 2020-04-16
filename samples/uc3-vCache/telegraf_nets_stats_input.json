@@ -1,0 +1,18 @@
+{
+	"fields": {
+		"bytes_recv": 183387273,
+		"bytes_sent": 304161205,
+		"drop_in": 0,
+		"drop_out": 0,
+		"err_in": 0,
+		"err_out": 0,
+		"packets_recv": 1108140,
+		"packets_sent": 910064
+	},
+	"name": "net",
+	"tags": {
+		"host": "F9B05EE3-9E1D-4EA1-91B7-B4DC8149A08C",
+		"interface": "eth0"
+	},
+	"timestamp": 1527165350
+}

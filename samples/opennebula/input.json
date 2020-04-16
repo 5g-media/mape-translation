@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-03-28T10:20:05.000000Z",
+  "vdu_uuid": 1004,
+  "value": "349236528",
+  "type": "diskrdbytes",
+  "unit": "bytes"
+}

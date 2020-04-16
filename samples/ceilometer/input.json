@@ -1,0 +1,47 @@
+{
+  "resource_metadata": {
+    "name": "instance-00000009",
+    "os_type": "hvm",
+    "memory_mb": 4096,
+    "task_state": "",
+    "root_gb": 10,
+    "instance_host": "devstack-pike-restored",
+    "image": {
+      "id": "a46178eb-9f69-4e44-9058-c5eb5ded0aa3"
+    },
+    "status": "active",
+    "image_ref": "a46178eb-9f69-4e44-9058-c5eb5ded0aa3",
+    "state": "running",
+    "disk_gb": 10,
+    "ephemeral_gb": 0,
+    "cpu_number": 1,
+    "flavor": {
+      "name": "ubuntuvnf_vnfd-VM-flv",
+      "ram": 4096,
+      "id": "c46aecab-c6a9-4775-bde2-070377b8111f",
+      "vcpus": 1,
+      "disk": 10,
+      "swap": 0,
+      "ephemeral": 0
+    },
+    "vcpus": 1,
+    "instance_id": "99f76771-3a39-42ae-a09c-2f79f459a9c9",
+    "display_name": "ns_takis-2-cirros_vnfd-VM-1",
+    "host": "0c78db68146531367cfa19e7704be48160e19093d94efd9662a3d743",
+    "architecture": "x86_64",
+    "image_ref_url": null,
+    "instance_type": "ubuntuvnf_vnfd-VM-flv"
+  },
+  "source": "openstack",
+  "monotonic_time": null,
+  "user_id": "78494ab40f5f45c8ad304fa6fd0fb9d7",
+  "timestamp": "2019-02-13T22:55:41.195621",
+  "counter_type": "cumulative",
+  "project_id": "e0e9b0e12f784ae0ae93c1ffe05a7644",
+  "message_signature": "0eb72d7a39a67da8230f7c91f743feace9f6d375e99d805bdde347ad93c6370b",
+  "counter_name": "cpu",
+  "counter_unit": "ns",
+  "counter_volume": 4948772895172,
+  "message_id": "c72153be-55e3-11e8-8893-fa163ed524e4",
+  "resource_id": "99f76771-3a39-42ae-a09c-2f79f459a9c9"
+}

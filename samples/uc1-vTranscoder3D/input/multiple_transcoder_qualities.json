@@ -1,0 +1,13 @@
+{
+  "vdu_uuid": "1", // vnf_index
+  "transcoder_engine": "v2.8.4-GPU",
+  "frame_count": 8746,
+  "working_fps": 7.0,
+  "no_of_profiles_produced": 1,
+  "total_transcoding_time_ms": 0.524,
+  "theoretic_load_percentage": 0.3668,
+  "input_data_bytes": 245421,
+  "output_data_bytes": 245421,
+  "input_mesh_codec": "DRACO",
+  "no_of_input_textures": 4
+}

@@ -1,0 +1,44 @@
+{
+  "metric": {
+    "timestamp": "2019-02-14T09:08:09.000000Z",
+    "value": 0.012,
+    "type": "gauge",
+    "name": "bytes_recv",
+    "unit": "Mbps"
+  },
+  "mano": {
+    "ns": {
+      "nsd_id": "d5c99561-ec46-4480-8377-b5b218b8b1e5",
+      "name": "ns_takis",
+      "id": "13987ea3-054a-459b-a24d-f4c76679edaf",
+      "nsd_name": "cirros_2vnf_ns"
+    },
+    "vim": {
+      "tag": "telegraf",
+      "type": "openstack",
+      "name": "devstack-ocata",
+      "uuid": "48eb5bd0-feaa-48ed-b0d7-6d2b8ad0385e",
+      "url": "http://192.168.1.147/identity/v3"
+    },
+    "vdu": {
+      "status": null,
+      "name": null,
+      "ip_address": "192.168.207.2",
+      "mgmt-interface": null,
+      "image_id": null,
+      "flavor": {
+        "vcpus": null,
+        "ram": null,
+        "disk": null
+      },
+      "id": null
+    },
+    "vnf": {
+      "short_name": null,
+      "vnfd_name": "cirros_vnfd",
+      "id": "abd00f09-dff1-40f1-be83-637a456ed400",
+      "name": null,
+      "vnfd_id": "16c40d2e-7a1b-4f22-9e50-3f7ede3e9fc4"
+    }
+  }
+}
